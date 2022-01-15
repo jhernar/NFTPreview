@@ -23,37 +23,39 @@
 html {
     font-family: var(--outfit);
     font-size: var(--paragraph);
+        background-color: var(--very-dark-blue-main-bg);
+
 }
 
 .main-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--very-dark-blue-main-bg);
 }
 
 .nft-card {
-    width: 340px;
+    width: 17em;
     background-color: var(--very-dark-blue-card-bg);
-    border-radius: 20px;
+    border-radius: 1.25em;
 }
 
 .nft-card__img {
-    margin: 30px auto;
+    margin: 1.5em auto;
     background-image: url(./images/image-equilibrium.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: .8em;
     width: 80%;
-    height: 310px;
+    height: 265px;
 
 }
 
 .nft-card__info {
-    padding: 30px;
+    padding: 1.8em;
     padding-top: 0;
 }
 
@@ -63,17 +65,16 @@ html {
 }
 
 .info__paragraph {
-    margin-top: 10px;
+    margin-top: 0.6em;
     font-weight: 300;
     color: var(--soft-blue);
 }
 
 .info__nft {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-size: 10px;
-    padding: 20px;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    padding: 1.25em;
 }
 
 .info__nft > .eth {
@@ -85,7 +86,7 @@ html {
 }
 
 .line {
-    border-bottom: 2px solid var(--very-dark-blue-line);
+    border-bottom: 0.1em solid var(--very-dark-blue-line);
 }
 
 .info__creator {
@@ -95,11 +96,21 @@ html {
 }
 
 .info__creator>img {
-    width: 30px;
-    border: 2px solid #fff;
-    border-radius: 30px;
+    width: 1.9em;
+    border: 0.12em solid #fff;
+    border-radius: 1.9em;
 }
 
 .info__creator>p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--very-dark-blue-main-bg);
+
+}
+
+@media screen, (max-width: 375px){
+
 }
